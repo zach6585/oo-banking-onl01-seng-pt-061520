@@ -18,7 +18,9 @@ class Transfer
   def execute_transaction
     if sender.balance < @amount 
       return "Transaction rejected. Please check your account balance."
-    sender.balance -= @amount 
-    receiver.balance += @amount 
+    else 
+      sender.balance -= @amount 
+      receiver.balance += @amount 
+    end 
   end 
 end
