@@ -20,4 +20,6 @@ class BankAccount
       return True 
     else 
       return False 
+    end 
+  end 
 end
